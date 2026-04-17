@@ -1,3 +1,137 @@
 #header{
     font-family: "Poppins", serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+  font-family: Merriweather, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  --tw-text-opacity: 1;
+  color: rgb(34 34 34 / var(--tw-text-opacity));
+}
+  h1,
+  .h1 {
+  font-size: 2.399798297585031rem;
+}
+
+  @media (min-width: 768px) {
+
+  h1,
+  .h1 {
+    font-size: 2.9997478719812887rem;
+  }
+}
+  h2,
+  .h2 {
+  font-size: 1.9264502152066136rem;
+}
+  @media (min-width: 768px) {
+
+  h2,
+  .h2 {
+    font-size: 2.408062769008267rem;
+  }
+}
+  h3,
+  .h3 {
+  font-size: 1.5464676491371294rem;
+}
+  @media (min-width: 768px) {
+
+  h3,
+  .h3 {
+    font-size: 1.9330845614214116rem;
+  }
+}
+  h4,
+  .h4 {
+  font-size: 1.5517934041000003rem;
+}
+  h5,
+  .h5 {
+  font-size: 1.24571rem;
+}
+  h6,
+  .h6 {
+  font-size: 1rem;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.review {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.05);
+}
+
+.review-author-avatar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3rem;
+  height: 90px;
+  width: 90px;
+  --tw-translate-y: -1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  padding: 0.125rem;
+}
+
+.reviews-carousel .swiper-pagination-bullet {
+  height: 0.875rem;
+  width: 0.875rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(141 141 141 / var(--tw-bg-opacity));
+}
+
+.reviews-carousel .swiper-pagination-bullet-active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 96 25 / var(--tw-bg-opacity));
+}

@@ -1,110 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/feature-icon-9.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/feature-icon-9.svg" />
     <title>Capstone</title>
 
     <!-- Link Flowbite -->
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 
     <!-- Cript Taiwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@3"></script>
 
     <!-- Font Merriweather/Poppins-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&amp;display=swap" rel="stylesheet" />
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="./css/brands.css" />
+    <link rel="stylesheet" href="./css/solid.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
     <!-- Link CSS Custom -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body>
-    <!-- Header With Logo   -->
-    <header id="header">
-        <nav class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-default">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" />
-                    <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Flowbite</span>
-                </a>
-                <button data-collapse-toggle="navbar-dropdown" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
-                    aria-controls="navbar-dropdown" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                            d="M5 7h14M5 12h14M5 17h14" />
-                    </svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-                    <ul
-                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                                aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <button id="dropdownNvbarButton" data-dropdown-toggle="dropdownNavbar"
-                                class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
-                                Dropdown
-                                <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m19 9-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdownNavbar"
-                                class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
-                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton">
-                                    <li>
-                                        <a href="#"
-                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Settings</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign
-                                            out</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Services</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
-                        </li>
-                    </ul>
+    <section class="reviews">
+        <div class="container">
+            <div class="row justify-between">
+                <div class="lg:col-6">
+                    <h2>Our customers have nice things to say about us</h2>
+                </div>
+                <div class="lg:col-4">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+                        recusandae sint optio suscipit nihil sapiente cum eos adipisci
+                        odit et omnis tempora at eum, quidem nisi sunt nostrum aperiam.
+                        Maiores.
+                    </p>
                 </div>
             </div>
-        </nav>
-    </header>
-
+            <div class="row mt-10">
+                <div class="rol-12">
+                    <div
+                        class="swiper reviews-carousel swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-2f28f887af828cbf" aria-live="polite" style="
+                  transform: translate3d(-1198px, 0px, 0px);
+                  transition-duration: 0ms;
+                ">
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                data-swiper-slide-index="0" role="group" aria-label="1 / 3"
+                                style="width: 379.333px; margin-right: 20px">
+                                <div class="review">
+                                    <div class="review-author-avatrar bg-gradient">
+                                        <img src="./img/user-5.png" alt="" />
+                                    </div>
+                                    <h4 class="mb-2">Courtney Henry</h4>
+                                    <p class="mb-4">microsoft corp</p>
+                                    <p>
+                                        Our platform helps build secure onboarding authentica
+                                        experiences &amp; engage your users. We build .
+                                    </p>
+                                    <div class="review-rating mt-6 flex items-center justify-center space-x-2.5">
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star-white.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                data-swiper-slide-index="1" role="group" aria-label="2 / 3"
+                                style="width: 379.333px; margin-right: 20px">
+                                <div class="review">
+                                    <div class="review-author-avatar bg-gradient">
+                                        <img src="./img/user-2.png" alt="" />
+                                    </div>
+                                    <h4 class="mb-2">Ronald Richards</h4>
+                                    <p class="mb-4 text-[#666]">meta limited</p>
+                                    <p>
+                                        Our platform helps build secure onboarding authentica
+                                        experiences &amp; engage your users. We build .
+                                    </p>
+                                    <div class="review-rating mt-6 flex items-center justify-center space-x-2.5">
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star-white.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                                data-swiper-slide-index="2" role="group" aria-label="3 / 3"
+                                style="width: 379.333px; margin-right: 20px">
+                                <div class="review">
+                                    <div class="review-author-avatar bg-gradient">
+                                        <img src="./img/user-6.png" alt="" />
+                                    </div>
+                                    <h4 class="mb-2">Bessie Cooper</h4>
+                                    <p class="mb-4 text-[#666]">apple inc ltd</p>
+                                    <p>
+                                        Our platform helps build secure onboarding authentica
+                                        experiences &amp; engage your users. We build .
+                                    </p>
+                                    <div class="review-rating mt-6 flex items-center justify-center space-x-2.5">
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star-white.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group"
+                                aria-label="1 / 3" style="width: 379.333px; margin-right: 20px">
+                                <div class="review">
+                                    <div class="review-author-avatar bg-gradient">
+                                        <img src="./img/user-5.png" alt="" />
+                                    </div>
+                                    <h4 class="mb-2">Courtney Henry</h4>
+                                    <p class="mb-4 text-[#666]">microsoft corp</p>
+                                    <p>
+                                        Our platform helps build secure onboarding authentica
+                                        experiences &amp; engage your users. We build .
+                                    </p>
+                                    <div class="review-rating mt-6 flex items-center justify-center space-x-2.5">
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star-white.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group"
+                                aria-label="2 / 3" style="width: 379.333px; margin-right: 20px">
+                                <div class="review">
+                                    <div class="review-author-avatar bg-gradient">
+                                        <img src="./img/user-2.png" alt="" />
+                                    </div>
+                                    <h4 class="mb-2">Ronald Richards</h4>
+                                    <p class="mb-4 text-[#666]">meta limited</p>
+                                    <p>
+                                        Our platform helps build secure onboarding authentica
+                                        experiences &amp; engage your users. We build .
+                                    </p>
+                                    <div class="review-rating mt-6 flex items-center justify-center space-x-2.5">
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star-white.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2"
+                                role="group" aria-label="3 / 3" style="width: 379.333px; margin-right: 20px">
+                                <div class="review">
+                                    <div class="review-author-avatar bg-gradient">
+                                        <img src="./img/user-6.png" alt="" />
+                                    </div>
+                                    <h4 class="mb-2">Bessie Cooper</h4>
+                                    <p class="mb-4 text-[#666]">apple inc ltd</p>
+                                    <p>
+                                        Our platform helps build secure onboarding authentica
+                                        experiences &amp; engage your users. We build .
+                                    </p>
+                                    <div class="review-rating mt-6 flex items-center justify-center space-x-2.5">
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star-white.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                data-swiper-slide-index="0" role="group" aria-label="1 / 3"
+                                style="width: 379.333px; margin-right: 20px">
+                                <div class="review">
+                                    <div class="review-author-avatar bg-gradient">
+                                        <img src="./img/user-5.png" alt="" />
+                                    </div>
+                                    <h4 class="mb-2">Courtney Henry</h4>
+                                    <p class="mb-4 text-[#666]">microsoft corp</p>
+                                    <p>
+                                        Our platform helps build secure onboarding authentica
+                                        experiences & engage your users. We build .
+                                    </p>
+                                    <div class="review-rating mt-6 flex items-center justify-center space-x-2.5">
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star.svg" alt="" />
+                                        <img src="./img/star-white.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                data-swiper-slide-index="1" role="group" aria-label="2 / 3"
+                                style="width: 379.333px; margin-right: 20px">
+                                <div class="review">
+                                    <div class="review-author-avatar bg-gradient">
+                                        <img src="./img/user-2.png alt="" />
+                    </div>
+                    <h4 class=" mb-2">Ronald Richards</h4>
+                                        <p class="mb-4 text-[#666]">meta limited</p>
+                                        <p>
+                                            Our platform helps build secure onboarding authentica
+                                            experiences &amp; engage your users. We build .
+                                        </p>
+                                        <div class="review-rating mt-6 flex items-center justify-center space-x-2.5">
+                                            <img src="./img/star.svg" alt="" />
+                                            <img src="./img/star.svg" alt="" />
+                                            <img src="./img/star.svg" alt="" />
+                                            <img src="./img/star.svg" alt="" />
+                                            <img src="./img/star-white.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"
+                                    role="group" aria-label="3 / 3" style="width: 379.333px; margin-right: 20px">
+                                    <div class="review">
+                                        <div class="review-author-avatar bg-gradient">
+                                            <img src="./img/user-6.png" alt="" />
+                                        </div>
+                                        <h4 class="mb-2">Bessie Cooper</h4>
+                                        <p class="mb-4 text-[#666]">apple inc ltd</p>
+                                        <p>
+                                            Our platform helps build secure onboarding authentica
+                                            experiences &amp; engage your users. We build .
+                                        </p>
+                                        <div class="review-rating mt-6 flex items-center justify-center space-x-2.5">
+                                            <img src="./img/star.svg" alt="" />
+                                            <img src="./img/star.svg" alt="" />
+                                            <img src="./img/star.svg" alt="" />
+                                            <img src="./img/star.svg" alt="" />
+                                            <img src="./img/star-white.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-pagination reviews-carousel-pagination !bottom-0 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                        role="button" aria-label="Go to slide 1" aria-current="true"></span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                        aria-label="Go to slide 2">
+                                    </span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                        aria-label="Go to slide 3">
+                                    </span>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Script Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- Cript Flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <!--Main Script-->
+    <script src="./libs/main.js"></script>
 </body>
 
 </html>

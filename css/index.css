@@ -638,4 +638,8 @@ h6,
 }
 .social-icons li a:hover path {
   fill: #fff;
+    font-family: "Poppins", serif;
+}
+body{
+    background-color: rgb(238, 236, 236);
 }

@@ -34,22 +34,14 @@
 
 <body>
     <!-- Header With Logo   -->
-    <header id="header" class="h-20 w-full absolute pt-5">
-        <nav class="max-w-screen-xl flex flex-wrap justify-between mx-auto p-4">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+   <header id="header" class="block h-20 w-full lg:flex lg:justify-center">
+        <nav class="w-full lg:max-w-screen-xl p-4 flex flex-row justify-between">
+            <a href="#" class="flex items-top space-x-3 rtl:space-x-reverse lg:items-center">
                 <img src="./img/logo.svg" class="h-7" alt="CapStone Logo" />
             </a>
-            <button data-collapse-toggle="navbar-dropdown" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-sm lg:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
-                aria-controls="navbar-dropdown" aria-expanded="false">
-                <!-- <span class="sr-only">Open main menu</span> -->
-                <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
-                </svg>
-            </button>
-            <div class="hidden w-full lg:block lg:w-auto" id="navbar-dropdown">
-                <ul class="flex flex-col p-4 lg:p-0 mt-4 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 text-sm">
+            <div class="hidden lg:flex :flex-row w-full lg:w-auto relative" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col p-4 leading-7 lg:p-0 mt-4 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 text-sm items-center lg:mr-[100px]">
                     <li><a href="#" class="p-2 hover:text-orange-400 h-10 relative" id="home">Home</a></li>
                     <li><a href="#" class="p-2 hover:text-orange-400">About</a></li>
                     <li><a href="#" class="p-2 hover:text-orange-400">Blog</a></li>
@@ -84,14 +76,26 @@
                     </li>
                     <li><a href="#" class="p-2 hover:text-orange-400">Contact</a></li>
                 </ul>
-            </div>
-            <div><button class="hidden lg:block border-0 text-sm rounded-full p-2 px-5 shadow-lg hover:shadow-none bg-white">
-                    Sign Up Now</button></div>
+
+                <div class="flex justify-center">
+                    <button class="border-[0.5px] lg:border-0  rounded-full p-2 px-5 shadow-lg hover:shadow-none bg-white ">
+                        Sign Up Now</button>
+                </div>
+            </div> 
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-top p-2 w-10 h-10 justify-right text-sm text-body rounded-sm lg:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6 flex justify-right" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+                </svg>
+            </button>
         </nav>
     </header>
     <section id="about" class="flex justify-center pt-20">
-        <div class="my-10 max-w-screen-xl flex flex-col lg:flex-row p-4 items-center justify-center">
-            <div class="flex flex-col items-start w-1/2">
+        <div class="my-10 w-full lg:max-w-screen-xl flex flex-col lg:flex-row p-4 items-center lg:justify-center justify-left">
+            <div class="flex flex-col items-start w-full lg:w-1/2 ">
                 <h1 class="text-5xl/15 font-thin text-left font__mer">Scale design & dev operations with Avocode
                     Enterprise</h1>
                 <p class="text-lg m-4 text-left opacity-50">A fully integrated suite of authentication &

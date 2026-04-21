@@ -15,7 +15,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Cript Taiwind -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Font Merriweather/Poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,208 +34,197 @@
     <link rel="stylesheet" href="./css/index.css" />
 </head>
     <!-- Header With Logo   -->
-    <header id="header" class="h-20 bg-red-100">
-        <nav class="fixed w-full z-20 top-0 start-0 border-default">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="./img/logo.svg" class="h-7" alt="CapStone Logo" />
-                </a>
-                <button data-collapse-toggle="navbar-dropdown" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-sm lg:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
-                    aria-controls="navbar-dropdown" aria-expanded="false">
-                    <!-- <span class="sr-only">Open main menu</span> -->
-                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                            d="M5 7h14M5 12h14M5 17h14" />
-                    </svg>
-                </button>
-                <div class="hidden w-full lg:block lg:w-auto" id="navbar-dropdown">
-                    <ul
-                        class="flex flex-col p-4 lg:p-0 mt-4 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 text-sm">
-                        <li>
-                            <a href="#" class="p-2 hover:text-red-500">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="">About</a>
-                        </li>
-                        <li>
-                            <a href="#" class="">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#" class="">feature</a>
-                        </li>
-                        <li>
-                            <a href="#" class="">How It Works</a>
-                        </li>
-                        <li>
-                            <button id="dropdownNvbarButton" data-dropdown-toggle="dropdownNavbar"
-                                class="flex w-full py-2 px-3 font-xs lg:w-auto lg:p-0">Pages
-                                <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m19 9-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="z-10 hidden w-30">
-                                <ul class="p-2 text-sm text-body font-thin border-1 items-center bg-white rounded-md border-red-500"
-                                    aria-labelledby="dropdownNvbarButton">
-                                    <li>
-                                        <a href="#" class="flex items-center w-full font-thin p-2 rounded">Career</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="flex items-center w-full p-2">Career Single</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="flex items-center w-full p-2">Integrations</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="flex items-center w-full p-2">Integration
-                                            Single</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="flex items-center w-full p-2">Pricing</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="flex items-center w-full p-2">Changelogs</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="flex items-center w-full p-2">Terms & Condition</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="py-3 px-2">Contact</a>
-                        </li>
-                    </ul>
+   <header id="header" class="block h-20 w-full lg:flex lg:justify-center">
+        <nav class="w-full lg:max-w-screen-xl p-4 flex flex-row justify-between">
+            <a href="#" class="flex items-top space-x-3 rtl:space-x-reverse lg:items-center">
+                <img src="./img/logo.svg" class="h-7" alt="CapStone Logo" />
+            </a>
+            <div class="hidden lg:flex :flex-row w-full lg:w-auto relative" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col p-4 leading-7 lg:p-0 mt-4 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 text-sm items-center lg:mr-[100px]">
+                    <li><a href="#" class="p-2 hover:text-orange-400 h-10 relative" id="home">Home</a></li>
+                    <li><a href="#" class="p-2 hover:text-orange-400">About</a></li>
+                    <li><a href="#" class="p-2 hover:text-orange-400">Blog</a></li>
+                    <li><a href="#" class="p-2 hover:text-orange-400">feature</a></li>
+                    <li><a href="#" class="p-2 hover:text-orange-400">How It Works</a></li>
+                    <li>
+                        <button id="dropdownNvbarButton" data-dropdown-toggle="dropdownNavbar"
+                            class="flex w-full py-2 px-3 font-xs lg:w-auto lg:p-0 hover:text-orange-400">Pages
+                            <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 9-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar" class="z-10 hidden w-40">
+                            <ul class="text-sm text-body font-medium border-1 items-center bg-white rounded-md border-orange-300"
+                                aria-labelledby="dropdownNvbarButton">
+                                <li><a href="#" class="flex items-center p-2 hover:text-orange-400">Career</a></li>
+                                <li><a href="#" class="flex items-center p-2 hover:text-orange-400">Career Single</a>
+                                </li>
+                                <li><a href="#" class="flex items-center p-2 hover:text-orange-400">Integrations</a>
+                                </li>
+                                <li><a href="#" class="flex items-center p-2 hover:text-orange-400">Integration
+                                        Single</a></li>
+                                <li><a href="#" class="flex items-center p-2 hover:text-orange-400">Pricing</a></li>
+                                <li><a href="#" class="flex items-center p-2 hover:text-orange-400">Changelogs</a></li>
+                                <li><a href="#" class="flex items-center p-2 hover:text-orange-400">Terms &
+                                        Condition</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" class="p-2 hover:text-orange-400">Contact</a></li>
+                </ul>
+
+                <div class="flex justify-center">
+                    <button class="border-[0.5px] lg:border-0  rounded-full p-2 px-5 shadow-lg hover:shadow-none bg-white ">
+                        Sign Up Now</button>
                 </div>
-                <div>
-                    <button class="bg-white border-0 text-sm rounded-full p-2 px-5">Sign Up Now</button>
-                </div>
-            </div>
+            </div> 
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-top p-2 w-10 h-10 justify-right text-sm text-body rounded-sm lg:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6 flex justify-right" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+                </svg>
+            </button>
         </nav>
     </header>
-    <section id="about" class="flex justify-center">
-        <div class="my-10 max-w-screen-xl bg-gray-300 flex flex-row p-4 items-center justify-center">
-            <div class="flex flex-col items-center w-1/2">
-                <h1 class="text-5xl text-center">Scale design & dev operations with Avocode Enterprise</h1>
-                <p class="text-lg m-4 text-center">A fully integrated suite of authentication & authoriz products,
+    <section id="about" class="flex justify-center pt-20">
+        <div class="my-10 w-full lg:max-w-screen-xl flex flex-col lg:flex-row p-4 items-center lg:justify-center justify-left">
+            <div class="flex flex-col items-start w-full lg:w-1/2 ">
+                <h1 class="text-5xl/15 font-thin text-left font__mer">Scale design & dev operations with Avocode
+                    Enterprise</h1>
+                <p class="text-lg m-4 text-left opacity-50">A fully integrated suite of authentication &
+                    authoriz products,
                     Stytch's platform removes the headache of.</p>
-                <button class="rounded-full py-3 px-6 m-4 bg-white shadow-lg">Down Load The Theme</button>
+                <button class="rounded-full py-3 px-6 m-4 bg-white shadow-lg hover:shadow-none">DownLoad The
+                    Theme</button>
             </div>
             <div class="w-1/2">
                 <img class="" src="./img/banner-img.png" alt="">
             </div>
+
+            <img src="./img/banner-shape.svg" alt="banner-shape" class="absolute right-0 top-0 -z-1 m-0 p-0 w-[30%]">
         </div>
     </section>
-    <section id="solution" class="flex justify-center">
-        <div class="my-10 max-w-screen-xl bg-blue-100 flex flex-col p-4">
-            <div class="flex flex-row justify-between mb-10">
-                <h1 class="text-5xl">The Highlighting Part Of<br>Our Solution</h1>
-                <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Morbi egestas Werat
-                    viverra
-                    id et aliquet.<br>vulputate egestas sollicitudin.</p>
+    <section id="solution" class="flex justify-center relative">
+        <img src="./img/shape.svg" alt="shape"
+            class="absolute left-0 top-0 -z-1 -translate-y-1/2 -translate-x-1/2 -rotate-90">
+        <div class="my-10 max-w-screen-xl flex flex-col p-4">
+
+            <div class="flex flex-col md:flex-row md:justify-between mb-10">
+                <h1 class="text-4xl/12 font__mer">The Highlighting Part Of<br>Our Solution</h1>
+                <p class="text-lg opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Morbi egestas
+                    Werat viverra id et aliquet.<br>vulputate egestas sollicitudin.</p>
             </div>
-            <div class="grid grid-rows-3 grid-cols-4 gap-6">
+            <div class="grid lg:grid-rows-3 lg:grid-cols-4 md:grid-rows-4 md:grid-cols-3
+                sm:grid-cols-2 sm:grid-rows-5 gap-6 ">
                 <div class="rounded-md p-4 shadow-lg bg-white">
-                    <h3 class="text-3xl">Live Caption</h3>
-                    <p class="text-sm/8 mt-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3 class="text-3xl font__mer">Live Caption</h3>
+                    <p class="text-sm/6 mt-4 mb-4 opacity-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
                     <img src="./img/feature-icon-1.svg" alt="" class="text-red-500 w-7 h-7">
                 </div>
                 <div class="rounded-md p-4 shadow-lg bg-white">
-                    <h3 class="text-3xl">Live Caption</h3>
-                    <p class="text-sm/8 mt-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3 class="text-3xl font__mer">Live Caption</h3>
+                    <p class="text-sm/6 mt-4 mb-4 opacity-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
                     <img src="./img/feature-icon-2.svg" alt="" class="text-red-500 w-7 h-7">
                 </div>
                 <div class="rounded-md p-4 shadow-lg bg-white">
-                    <h3 class="text-3xl">Live Caption</h3>
-                    <p class="text-sm/8 mt-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3 class="text-3xl font__mer">Live Caption</h3>
+                    <p class="text-sm/6 mt-4 mb-4 opacity-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
                     <img src="./img/feature-icon-3.svg" alt="" class="text-red-500 w-7 h-7">
                 </div>
                 <div class="rounded-md p-4 shadow-lg bg-white">
-                    <h3 class="text-3xl">Live Caption</h3>
-                    <p class="text-sm/8 mt-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3 class="text-3xl font__mer">Live Caption</h3>
+                    <p class="text-sm/6 mt-4 mb-4 opacity-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
                     <img src="./img/feature-icon-4.svg" alt="" class="text-red-500 w-7 h-7">
                 </div>
                 <div class="rounded-md p-4 shadow-lg bg-white">
-                    <h3 class="text-3xl">Live Caption</h3>
-                    <p class="text-sm/8 mt-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3 class="text-3xl font__mer">Live Caption</h3>
+                    <p class="text-sm/6 mt-4 mb-4 opacity-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
                     <img src="./img/feature-icon-5.svg" alt="" class="text-red-500 w-7 h-7">
                 </div>
                 <div class="rounded-md p-4 shadow-lg bg-white">
-                    <h3 class="text-3xl">Live Caption</h3>
-                    <p class="text-sm/8 mt-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3 class="text-3xl font__mer">Live Caption</h3>
+                    <p class="text-sm/6 mt-4 mb-4 opacity-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
                     <img src="./img/feature-icon-6.svg" alt="" class="text-red-500 w-7 h-7">
                 </div>
                 <div class="rounded-md p-4 shadow-lg bg-white">
-                    <h3 class="text-3xl">Live Caption</h3>
-                    <p class="text-sm/8 mt-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3 class="text-3xl font__mer">Live Caption</h3>
+                    <p class="text-sm/6 mt-4 mb-4 opacity-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
                     <img src="./img/feature-icon-7.svg" alt="" class="text-red-500 w-7 h-7">
                 </div>
                 <div class="rounded-md p-4 shadow-lg bg-white">
-                    <h3 class="text-3xl">Live Caption</h3>
-                    <p class="text-sm/8 mt-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3 class="text-3xl font__mer">Live Caption</h3>
+                    <p class="text-sm/6 mt-4 mb-4 opacity-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
                     <img src="./img/feature-icon-8.svg" alt="" class="text-red-500 w-7 h-7">
                 </div>
                 <div class="rounded-md p-4 shadow-lg bg-white">
-                    <h3 class="text-3xl">Live Caption</h3>
-                    <p class="text-sm/8 mt-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3 class="text-3xl font__mer">Live Caption</h3>
+                    <p class="text-sm/6 mt-4 mb-4 opacity-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
                     <img src="./img/feature-icon-9.svg" alt="" class="text-red-500 w-7 h-7">
                 </div>
                 <div class="rounded-md p-4 shadow-lg bg-white">
-                    <h3 class="text-3xl">Live Caption</h3>
-                    <p class="text-sm/8 mt-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3 class="text-3xl font__mer">Live Caption</h3>
+                    <p class="text-sm/6 mt-4 mb-4 opacity-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
                     <img src="./img/feature-icon-10.svg" alt="" class="text-red-500 w-7 h-7">
                 </div>
-
             </div>
         </div>
     </section>
     <section id="prevent" class="flex justify-center">
-        <div class="min-h-screen bg-gray-50 flex items-center justify-center p-10 max-w-screen-xl">
-            <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="m-4">
-                    <h1 class="text-5xl">Prevent failure from to impacting your reputation</h1>
-                    <p class="text-md my-5">Our platform helps you build secure onboarding authentication experiences
-                        that retain and engage your users. We build the infrastructure, you can.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-10 max-w-screen-xl">
+            <div class="m-4">
+                <h1 class="text-4xl font__mer">Prevent failure from to impacting your reputation</h1>
+                <p class="text-md my-5 opacity-50">Our platform helps you build secure onboarding authentication
+                    experiences
+                    that retain and engage your users. We build the infrastructure, you can.</p>
 
-                    <span onclick="switchTab(1)" id="tab-btn-1"
-                        class="tab-button cursor-pointer p-4 rounded-xl flex flex-row+">
-                        <img src="./img/drop.svg" alt="drop" class="mr-5">
-                        <h3 class="text-lg text-gray-800">Habit building essential choose habit</h3>
-                    </span>
+                <span onclick="switchTab(1)" id="tab-btn-1"
+                    class="tab-button cursor-pointer p-4 rounded-xl flex flex-row+">
+                    <img src="./img/drop.svg" alt="drop" class="mr-5">
+                    <h3 class="text-lg text-gray-800">Habit building essential choose habit</h3>
+                </span>
 
-                    <span onclick="switchTab(2)" id="tab-btn-2"
-                        class="tab-button cursor-pointer p-4 rounded-xl flex flex-row">
-                        <img src="./img/brain.svg" alt="brain" class="mr-5">
-                        <h3 class="text-lg text-gray-800">Get an overview of Habit Calendars.</h3>
-                    </span>
+                <span onclick="switchTab(2)" id="tab-btn-2"
+                    class="tab-button cursor-pointer p-4 rounded-xl flex flex-row">
+                    <img src="./img/brain.svg" alt="brain" class="mr-5">
+                    <h3 class="text-lg text-gray-800">Get an overview of Habit Calendars.</h3>
+                </span>
 
-                    <span onclick="switchTab(3)" id="tab-btn-3"
-                        class="tab-button cursor-pointer p-4 rounded-xl flex flex-row">
-                        <img src="./img/timer.svg" alt="timer" class="mr-5">
-                        <h3 class="text-lg text-gray-800">Get an overview of Habit Calendars.</h3>
-                    </span>
+                <span onclick="switchTab(3)" id="tab-btn-3"
+                    class="tab-button cursor-pointer p-4 rounded-xl flex flex-row">
+                    <img src="./img/timer.svg" alt="timer" class="mr-5">
+                    <h3 class="text-lg text-gray-800">Get an overview of Habit Calendars.</h3>
+                </span>
+            </div>
+            <div
+                class="relative bg-white rounded-3xl shadow-2xl p-6 min-h-[400px] flex items-center justify-center overflow-hidden">
+
+                <div id="content-1" class="tab-content transition-all duration-500 opacity-100 scale-100">
+                    <img src="./img/collaboration.png" alt="Map UI" class="rounded-lg shadow-sm">
                 </div>
 
-                <div
-                    class="relative bg-white rounded-3xl shadow-2xl p-6 min-h-[400px] flex items-center justify-center overflow-hidden">
+                <div id="content-2" class="tab-content hidden transition-all duration-500 opacity-0 scale-95 absolute">
+                    <img src="./img/sells-by-country.png" alt="OS Chart UI" class="rounded-lg shadow-sm">
+                </div>
 
-                    <div id="content-1" class="tab-content transition-all duration-500 opacity-100 scale-100">
-                        <img src="./img/collaboration.png" alt="Map UI" class="rounded-lg shadow-sm">
-                    </div>
-
-                    <div id="content-2"
-                        class="tab-content hidden transition-all duration-500 opacity-0 scale-95 absolute">
-                        <img src="./img/sells-by-country.png" alt="OS Chart UI" class="rounded-lg shadow-sm">
-                    </div>
-
-                    <div id="content-3"
-                        class="tab-content hidden transition-all duration-500 opacity-0 scale-95 absolute">
-                        <img src="./img/collaboration.png" alt="Collaborators UI" class="rounded-lg shadow-sm">
-                    </div>
+                <div id="content-3" class="tab-content hidden transition-all duration-500 opacity-0 scale-95 absolute">
+                    <img src="./img/collaboration.png" alt="Collaborators UI" class="rounded-lg shadow-sm">
                 </div>
             </div>
         </div>
